@@ -1,0 +1,29 @@
+@value baseFont: 18px;
+
+@value colors: "./colors.css";
+
+@value some, success from colors;
+
+.container {
+  composes: panel from "panel.css";
+
+  width: 200px;
+  height: 150px;
+
+  font-size: baseFont;
+  font-weight: 600;
+
+  color: success;
+  background-color: var(--primary-bg-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.other {
+  color: some;
+  font-size: 24px;
+  font-weight: 800;
+}

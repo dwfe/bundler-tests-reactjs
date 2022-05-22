@@ -1,0 +1,10 @@
+@value text-color: #212326;
+
+@value panelBorderRadius: 4px;
+
+.panel {
+  color: text-color;
+  background: var(--bg-color);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: panelBorderRadius;
+}
