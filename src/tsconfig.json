@@ -2,7 +2,7 @@
   "extends": "@do-while-for-each/tsconfig/tsconfig.base.json",
   "compilerOptions": {
     "target": "ESNext",
-    "module": "CommonJS",
+    "module": "ESNext",
     "jsx": "react-jsx",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
