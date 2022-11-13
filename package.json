@@ -4,6 +4,7 @@
   "private": "true",
   "scripts": {
     "clean": "dwfeFs cleanDir . --fileNames=\"dist;node_modules;package-lock.json\"",
+    "bootstrap": "npm run clean && npm install",
     "start": "dwfeBundler opt",
     "prod": "dwfeBundler opt --prod",
     "prepare-regress": "dwfeFs rmForce dist --noConfirm && tsc -b src/__tests__/tsconfig.prepare.json && node ./dist/prepare.js",
@@ -20,7 +21,7 @@
   },
   "devDependencies": {
     "@do-while-for-each/tsconfig": "1.x.x",
-    "@do-while-for-each/bundler": "1.x.x",
+    "@do-while-for-each/bundler": "2.x.x",
     "@do-while-for-each/automation": "1.x.x"
   },
   "dwfeBundlerOptions": {
